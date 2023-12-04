@@ -10,7 +10,6 @@ export default function MenuBar() {
 
     const [display, setDisplay] = useState("hidden")
     const path = usePathname()
-    console.log(path)
 
     function handleClick(){
         if (display === "hidden"){
