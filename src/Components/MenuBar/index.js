@@ -4,10 +4,13 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function MenuBar() {
 
     const [display, setDisplay] = useState("hidden")
+    const path = usePathname()
+    console.log(path)
 
     function handleClick(){
         if (display === "hidden"){
@@ -37,16 +40,16 @@ export default function MenuBar() {
                     </div>
                     <nav className="flex flex-col items-end px-5 sm:px-14 text-2xl gap-3">
                         <li>
-                            <Link href={'/'}>Inicio</Link>
+                            <Link href={'/'} className={path === '/' ? 'text-red-600' : ''}>Inicio</Link>
                         </li>
                         <li>
-                            <Link href={'/sobre'}>Sobre</Link>
+                            <Link href={'/sobre'} className={path === '/sobre' ? 'text-red-600' : ''}>Sobre</Link>
                         </li>
                         <li>
-                            <Link href={'/servicos'}>Serviços</Link>
+                            <Link href={'/servicos'} className={path === '/servicos' ? 'text-red-600' : ''}>Serviços</Link>
                         </li>
                         <li>
-                            <Link href={'/contato'}>Contato</Link>
+                            <Link href={'/contato'} className={path === '/contato' ? 'text-red-600' : ''}>Contato</Link>
                         </li>
                     </nav>
                 </ul>
@@ -54,16 +57,16 @@ export default function MenuBar() {
 
             <ul className="hidden gap-6 text-3xl font-thin md:flex lg:gap-10 xl:gap-16 ">
                 <li>
-                    <Link href={'/'}>Inicio</Link>
+                    <Link href={'/'} className={path === '/' ? 'text-red-600' : ''}>Inicio</Link>
                 </li>
                 <li>
-                    <Link href={'/sobre'}>Sobre</Link>
+                    <Link href={'/sobre'} className={path === '/sobre' ? 'text-red-600' : ''}>Sobre</Link>
                 </li>
                 <li>
-                    <Link href={'/servicos'}>Serviços</Link>
+                    <Link href={'/servicos'} className={path === '/servicos' ? 'text-red-600' : ''}>Serviços</Link>
                 </li>
                 <li>
-                    <Link href={'/contato'}>Contato</Link>
+                    <Link href={'/contato'} className={path === '/contato' ? 'text-red-600' : ''}>Contato</Link>
                 </li>
             </ul>
         </nav>
