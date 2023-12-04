@@ -1,9 +1,22 @@
+"use client"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function MenuBar() {
+
+    const [display, setDisplay] = useState("hidden")
+
+    function handleClick(){
+        if (display === "hidden"){
+            setDisplay('block')
+        } else {
+            setDisplay('hidden')
+        }
+    }
+
     return (
         <nav className="absolute w-screen flex justify-between px-5 sm:px-14 py-10 items-center z-10">
             <Image 
@@ -15,9 +28,27 @@ export default function MenuBar() {
             />
 
             <div className="md:hidden">
-                <FontAwesomeIcon icon={faBars} style={{color: "#000000",}} className="w-6" />
-                <ul>
+                <FontAwesomeIcon icon={faBars} style={{color: "#000000",}} size="xl" className="w-6" onClick={handleClick} />
 
+                <ul className={`h-screen w-screen absolute top-0 right-0 bg-black text-zinc-50 ${display}`}>
+                    <div className="flex justify-between px-5 sm:px-14 py-10">
+                        <div></div>
+                        <FontAwesomeIcon icon={faBars} style={{color: "#FFFFFF",}} size="xl" className="w-6" onClick={handleClick} />
+                    </div>
+                    <nav className="flex flex-col items-end px-5 sm:px-14 text-2xl gap-3">
+                        <li>
+                            <Link href={'/'}>Inicio</Link>
+                        </li>
+                        <li>
+                            <Link href={'/sobre'}>Sobre</Link>
+                        </li>
+                        <li>
+                            <Link href={'/servicos'}>Serviços</Link>
+                        </li>
+                        <li>
+                            <Link href={'/contato'}>Contato</Link>
+                        </li>
+                    </nav>
                 </ul>
             </div>
 
