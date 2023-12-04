@@ -5,7 +5,7 @@ import Title from "../Title";
 
 export default function Banner () {
     return(
-        <div className="grid grid-cols-2 h-screen">
+        <div className="grid grid-cols-1 md:grid md:grid-cols-2 h-screen">
             <div className="flex items-center justify-center">
                 <Image 
                     src={mullet} 
@@ -17,8 +17,8 @@ export default function Banner () {
                     placeholder="blur"
                 />
             </div>
-            
-            <div className="flex items-center justify-center">
+
+            <div className="hidden md:flex md:flex-col items-center justify-center">
                 <Image 
                     src={barba} 
                     width={900}
@@ -28,6 +28,7 @@ export default function Banner () {
                     loading="lazy"
                     placeholder="blur"
                 />
+                <p>A melhor barbearia de Dois Irmãos</p>
             </div>
             <Title />
         </div>
