@@ -1,6 +1,6 @@
 import Image from "next/image";
-import barba from "../../../public/assets/images/barba.avif"
-import mullet from "../../../public/assets/images/mullet.avif"
+import barba from "../../../public/assets/images/barba.png"
+import mullet from "../../../public/assets/images/mullet.png"
 import Title from "../Title";
 
 export default function Banner () {
@@ -26,7 +26,7 @@ export default function Banner () {
                     className="w-1/2 grayscale z-0 object-cover"
                     placeholder="blur"
                 />
-                <p>A melhor barbearia de Dois Irmãos</p>
+                <p>A melhor barbearia de Morro Reuter</p>
             </div>
             <Title />
         </div>
