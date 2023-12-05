@@ -1,6 +1,6 @@
 import Image from "next/image";
-import barba from "../../../public/assets/images/barba.jpg"
-import mullet from "../../../public/assets/images/mullet.jpg"
+import barba from "../../../public/assets/images/barba.avif"
+import mullet from "../../../public/assets/images/mullet.avif"
 import Title from "../Title";
 
 export default function Banner () {
