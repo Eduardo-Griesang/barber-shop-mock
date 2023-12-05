@@ -4,7 +4,7 @@ export default function Title () {
             <h1 className="text-9xl leading-[5rem] sm:text-10xl sm:leading-[10rem] font-black ">
                 NINO
             </h1>
-            <span className="text-xl">Barber shop</span>
+            <span className="text-xl">Barbershop</span>
         </section>
     )
 }
