@@ -1,6 +1,5 @@
 import Banner from '@/Components/Banner'
 import MenuBar from '@/Components/MenuBar'
-import Image from 'next/image'
 
 export default function Home() {
   return (
