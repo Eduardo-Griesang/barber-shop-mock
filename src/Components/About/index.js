@@ -4,7 +4,7 @@ export default function About () {
     return (
         <section className="flex flex-col gap-10 sm:gap-16 2xl:gap-20 justify-center items-center">    
             <p className="mt-32 text-lg w-5/6 sm:text-xl sm:mt-36 md:mt-40 lg:w-3/4 lg:text-2xl 2xl:text-3xl">
-                Nino Barbershop fica localizado no centro de Dois Irmãos - RS, R. Pastor Klein, 57 - União. Considerado por muitos a 
+                Polako Barbershop fica localizado no centro de Dois Irmãos - RS, R. Pastor Klein, 57 - União. Considerado por muitos a 
                 melhor barbearia da região, os <Link href={"/servicos"}>serviços</Link> variam desde o tratamento tradicional até a moda
                 mais recente. Aqui voce encontra um espaço de relaxamento e paz, venha tomar uma ótima bebida, ouvir boas músicas e deixar o
                 cabelo na régua.
