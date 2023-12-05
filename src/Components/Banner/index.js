@@ -12,8 +12,7 @@ export default function Banner () {
                     width={900}
                     height={900}
                     alt="Mão segurando uma navalha" 
-                    className="h-full w-full grayscale z-0"
-                    loading="lazy"
+                    className="h-full w-full grayscale z-0 object-cover"
                     placeholder="blur"
                 />
             </div>
@@ -24,8 +23,7 @@ export default function Banner () {
                     width={900}
                     height={900}
                     alt="Mão segurando uma navalha"
-                    className="w-1/2 grayscale z-0"
-                    loading="lazy"
+                    className="w-1/2 grayscale z-0 object-cover"
                     placeholder="blur"
                 />
                 <p>A melhor barbearia de Dois Irmãos</p>
