@@ -26,7 +26,7 @@ export default function Banner () {
                     className="w-1/2 grayscale z-0 object-cover"
                     placeholder="blur"
                 />
-                <p>A melhor barbearia de Morro Reuter</p>
+                <p>A melhor barbearia de Dois Irmãos</p>
             </div>
             <Title />
         </div>
