@@ -6,6 +6,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
+import logo from "../../../public/logo.svg"
+
 export default function MenuBar() {
 
     const [display, setDisplay] = useState("hidden")
@@ -22,11 +24,11 @@ export default function MenuBar() {
     return (
         <nav className="absolute w-screen flex justify-between px-5 sm:px-14 py-10 items-center z-10">
             <Image 
-                src={'https://shedbarber.com/wp-content/uploads/2017/01/Page-1.svg'}
+                src={logo}
                 width={120}
                 height={120}
                 alt="Mão segurando uma navalha" 
-                className="w-24 "
+                className="w-64"
             />
 
             <div className="md:hidden">
