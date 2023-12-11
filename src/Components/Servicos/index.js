@@ -64,7 +64,8 @@ export default function Servicos () {
             <section className="grid gap-5 pb-2 px-2 md:px-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-20 ">
                 {serv.map((ser) => {
                     return (
-                        <Servico 
+                        <Servico
+                            key={ser.titulo} 
                             titulo={ser.titulo} 
                             sobre={ser.sobre}
                             preco={ser.preco}
