@@ -8,19 +8,19 @@ export default function Servicos () {
     const serv = [
         {
             titulo: "Corte tesoura",
-            sobre: "Um corte completamente feito na tesoura e navalha no nuca.",
+            sobre: "Um corte completamente feito na tesoura e navalha no nuca. ",
             preco: "A partir de 40 reais.",
             link: "Agende seu corte"
         },
         {
             titulo: "Corte maquina",
-            sobre: "Um corte completamente feito na maquina e navalha no nuca.",
+            sobre: "Um corte completamente feito na maquina e navalha no nuca. ",
             preco: "A partir de 30 reais.",
             link: "Agende seu corte"
         },
         {
             titulo: "Undercut",
-            sobre: "Um corte completamente feito na tesoura e navalha no nuca.",
+            sobre: "Um corte completamente feito na tesoura e navalha no nuca. ",
             preco: "A partir de 50 reais.",
             link: "Agende seu corte"
         },
@@ -69,7 +69,7 @@ export default function Servicos () {
                             titulo={ser.titulo} 
                             sobre={ser.sobre}
                             preco={ser.preco}
-                            link={ser.preco}
+                            link={ser.link}
                         />
                     )
                 })}
