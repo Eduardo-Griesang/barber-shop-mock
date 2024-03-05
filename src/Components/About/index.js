@@ -1,10 +1,9 @@
 "use client"
 import Link from "next/link";
 import { useAnimation, useInView, motion } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function About () {
-
     const textRef = useRef()
     const textInView = useInView(textRef, {once:true})
     const textAnimation = useAnimation()
